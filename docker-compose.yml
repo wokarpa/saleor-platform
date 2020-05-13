@@ -54,7 +54,7 @@ services:
     volumes:
       - ./saleor-dashboard/:/app:cached
       - /app/node_modules/
-    command: npm start -- --host 0.0.0.0
+    command: npm start -- --host 0.0.0.0 --progress
 
   db:
     image: library/postgres:11.1-alpine
