@@ -69,6 +69,13 @@ You can find the latest version of Saleor, storefront and dashboard in their ind
 - https://github.com/mirumee/saleor-storefront
 
 
+## How to push the subprojects changes?
+
+```
+$ git push --recurse-submodules=check
+```
+
+
 ## How to run application parts?
   - `docker-compose up api worker` for backend services only
   - `docker-compose up` for backend and frontend services
